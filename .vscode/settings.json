@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".quartz": true,
+    ".turbo": true,
+    "public": true,
+    "package-lock.json": true,
+    "Dockerfile": true,
+    "LICENSE.txt": true,
+    "CODE_OF_CONDUCT.md": true,
+    "README.md": true,
+    "*.d.ts": true,
+    ".prettier*": true,
+    ".node-version": true,
+    ".npmrc": true,
+    ".gitattributes": true,
+    ".gitignore": true,
+    ".github": true,
+    "docs": true
+  }
+}
