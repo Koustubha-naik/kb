@@ -5,7 +5,8 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: google
+    tagId: G-YWQRY723L1
   locale: en-US
   baseUrl: kb.koustubha.com
   ignorePatterns:
