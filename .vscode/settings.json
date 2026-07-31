@@ -17,5 +17,8 @@
     ".gitignore": true,
     ".github": true,
     "docs": true
-  }
+  },
+  "workbench.browser.openLocalhostLinks": false,
+  "workbench.browser.enableChatTools": false,
+  "chat.sendElementsToChat.attachImages": false
 }
