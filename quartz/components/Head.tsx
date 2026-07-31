@@ -43,6 +43,26 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        {cfg.analytics?.provider === "google" && (
+  <>
+    <script
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${cfg.analytics.tagId}`}
+    />
+
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${cfg.analytics.tagId}');
+        `,
+      }}
+    />
+  </>
+)}
+
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
         {coreScript && coreScript.contentType === "external" && (
           <link rel="preload" href={coreScript.src} as="script" />
